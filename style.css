@@ -2,6 +2,7 @@
 
 :root {
   --header-color: #ffe700;
+  --theme-color: #f9f826;
   --hover-color: #2f26dd;
   --card-hover: hsla(24, 14%, 71%, 0.911);
   --card-color: #e1e1e1cb;
@@ -20,22 +21,17 @@ body {
   color: var(--font-color);
 }
 header {
-  background-image: url("./images/vecteezy_roller-brush-painting-painter-worker-painting-wall-vector_10619697.jpg");
+  background-image: url("./images/vecteezy_man-holding-a-roller-by-hand-isolated-on-a-background_5611307.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
-  padding: 100px 50px 80px;
-  border-bottom: 1px solid #2f26dd;
+  padding: 100px 50px 40px;
 }
-h1 {
-  padding-top: 80px;
-}
+
 iframe {
   border-radius: 8px;
 }
-p {
-  text-align: justify;
-}
+
 .about-title {
   margin: 80px auto 50px;
   text-align: center;
@@ -44,6 +40,7 @@ p {
   content: attr(data-heading);
   display: block;
   font-size: 15px;
+  color: var(--header-color);
 }
 .service-card {
   padding: 20px 30px;
@@ -66,6 +63,7 @@ p {
   content: attr(data-heading);
   display: block;
   font-size: 15px;
+  color: var(--header-color);
 }
 .shadow-effect {
   transition: all 0.5s;
@@ -84,10 +82,9 @@ p {
   padding: 0;
 }
 .intro-contact {
-  display: flex;
+  display: block;
   column-gap: 80px;
-  padding-top: 40px;
-  margin-left: 10px;
+  padding-top: 10px;
   bottom: 30px;
 }
 .intro-contact h3,
@@ -143,10 +140,10 @@ p {
 }
 .contact h6,
 h4 {
-  text-align: center;
+  text-align: left;
 }
 .contact h6 {
-  color: var(--skin-color);
+  color: var(--header-color);
   text-transform: uppercase;
 }
 .contact h4 {
@@ -155,6 +152,9 @@ h4 {
 .contact-into {
   display: block;
   margin: auto;
+}
+.contact-img img {
+  max-width: 600px;
 }
 .icons {
   display: grid;
@@ -167,4 +167,17 @@ h4 {
 .icons i {
   font-size: 30px;
   padding: 5px 15px;
+  color: var(--theme-color);
+}
+.home-intro {
+  text-align: end;
+}
+.copyright {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.copyright a:hover {
+  color: var(--header-color);
 }
